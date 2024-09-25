@@ -1,0 +1,9 @@
+CREATE DATABASE url_shortener;
+USE url_shortener;
+
+CREATE TABLE urls (
+    id INT(11) AUTO_INCREMENT PRIMARY KEY,
+    long_url TEXT NOT NULL,
+    short_code VARCHAR(6) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
