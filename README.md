@@ -23,37 +23,52 @@ This URL Shortener application allows users to input long URLs and receive short
    - [Visual Studio Code](https://code.visualstudio.com/)
 
 ### Step 1: Set Up the Environment
-1. **Install XAMPP** 
-   - Download and install XAMPP from the official website.
-   - Start the Apache server from the XAMPP Control Panel.
+1. **Install XAMPP (or similar software):**
+   - Download and install [XAMPP](https://www.apachefriends.org/index.html) or another local server (like WAMP or MAMP).
+   - XAMPP includes Apache (for the webserver) and MySQL (for the database).
 
-### Step 2: Create Project Directory
-1. Navigate to the `htdocs` directory (usually located at `C:\xampp\htdocs\` on Windows).
-2. Create a new folder for your project, e.g., `url-shortener`.
+2. **Start Apache and MySQL:**
+   - Open the XAMPP Control Panel.
+   - Start both the **Apache** and **MySQL** modules.
 
-### Step 3: Create Necessary Files
-1. Inside the `url-shortener` folder, create the following files:
-   - `index.php`
-   - `style.css`
-   - `script.js`
-   - `shorten.php`
+3. **Create a MySQL Database:**
+   - Open your browser and go to `http://localhost/phpmyadmin/`.
+   - Create a new database named `url-shortener`.
+   - Go to the **SQL** tab and run the following SQL script as given in above file to create the necessary table.
 
-2. **Copy the Code**:
+### Step 2: Set Up Project Files
+1. **Create a Project Folder:**
+   - Navigate to your `XAMPP/htdocs` directory (usually located in `C:/xampp/htdocs`).
+   - Create a new folder named `url-shortener` to hold the project files.
+
+2. **Create the Files:**
+   Inside the `url-shortener` folder, create the following files:
+   - **index.html**
+   - **style.css**
+   - **script.js**
+   - **shorten.php**
+
+3. **Copy the Code**:
    - Copy the provided code snippets for each file into the corresponding file. Ensure the names match exactly.
    - OR download all the file inside the `url-shortener` folder.
 
-### Step 4: Accessing the Application
-1. Open your web browser and navigate to:  http://localhost/url-shortener/index.php
+### Step 3: Testing the Application
 
-### Step 5: Testing the Application
-1. Enter a long URL in the input field and click the "Shorten" button.
-2. The shortened URL should appear below, along with the option to copy or delete it.
-3. Test the functionality of copying the URL and deleting history entries.
+1. **Access the Application:**
+   - Open your browser and go to `http://localhost/url-shortener/index.html`.
+
+2. **Test URL Shortening:**
+   - Enter a valid long URL (e.g., `https://www.example.com`).
+   - Click on the "Shorten URL" button.
+   - The shortened URL should appear, click on the URL and it should redirect you to the original long URL.
+   - The shortened URL should also appear in the **History of Shortened URLs** section , along with the option to copy or delete it.
+   - Test the functionality of copying the URL and deleting history entries.
 
 ### Troubleshooting
-- If you encounter a "Not Found" error, ensure:
-  - The Apache server is running in XAMPP.
-  - You are navigating to the correct URL (`http://localhost/url-shortener/index.php`).
+- If you encounter a "Not Found" error on hitting the shortend URL, ensure:
+  - You have an `.htaccess` file in the url-shortener directory,
+  - Check if Apache and MySQL are running in the XAMPP Control Panel.
+  - You are navigating to the correct URL (`http://localhost/url-shortener/index.html`).
   - The filenames and paths are correct.
 
 ### Contributing
@@ -64,3 +79,7 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 ## Conclusion
 This guide should help you set up and run the URL Shortener application smoothly. Feel free to modify the application as needed, and enjoy shortening your URLs!
+
+
+
+
