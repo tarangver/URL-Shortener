@@ -63,7 +63,11 @@ This URL Shortener application allows users to input long URLs and receive short
    - The shortened URL should appear, click on the URL and it should redirect you to the original long URL.
    - The shortened URL should also appear in the **History of Shortened URLs** section , along with the option to copy or delete it.
    - Test the functionality of copying the URL and deleting history entries.
-
+     
+3. **Check the Database:**
+   - Go to `phpMyAdmin`, select your database `url_shortener`, and check the `urls` table
+   - You should see entries for the long URL and its corresponding short code.
+     
 ### Troubleshooting
 - If you encounter a "Not Found" error on hitting the shortend URL, ensure:
   - You have an `.htaccess` file in the url-shortener directory,
@@ -79,7 +83,3 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 ## Conclusion
 This guide should help you set up and run the URL Shortener application smoothly. Feel free to modify the application as needed, and enjoy shortening your URLs!
-
-
-
-
