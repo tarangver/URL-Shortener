@@ -40,7 +40,7 @@ This URL Shortener application allows users to input long URLs and receive short
 
 2. **Copy the Code**:
    - Copy the provided code snippets for each file into the corresponding file. Ensure the names match exactly.
-   - OR download all the file inside the `url-shortener` folde.
+   - OR download all the file inside the `url-shortener` folder.
 
 ### Step 4: Accessing the Application
 1. Open your web browser and navigate to:  http://localhost/url-shortener/index.php
